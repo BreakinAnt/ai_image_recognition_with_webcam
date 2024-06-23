@@ -50,8 +50,8 @@ while True:
         
         model = Sequential()
 
-        model.add(Dense(20,activation='relu'))
-        model.add(Dense(15,activation='relu'))
+        model.add(Dense(units = 150, input_dim=dimInput, activation='relu'))
+        model.add(Dense(units = 150, activation='relu'))
         model.add(Dense(units = num_classes, activation='softmax'))
         model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])        
 
